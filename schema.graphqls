@@ -1,0 +1,15 @@
+type Query {
+  testMethod: String!
+  hello(name: String!): String!
+  getDefaultUser: User!
+}
+
+type User {
+  id: ID!
+  name: String!
+  age: Int!
+  friends: [User!]!
+  motto: String!
+  imageUrl: String!
+  processTitle: String!
+}
